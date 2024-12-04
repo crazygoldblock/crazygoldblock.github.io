@@ -3,12 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body, html {
     font-family: Arial, sans-serif;
 }
-
-/* Static Navigation Bar */
 
 .navbar {
     position: fixed;
@@ -17,8 +14,8 @@ body, html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+    justify-content: center; 
     padding: 10px 20px;
     z-index: 1000;
 }
@@ -66,10 +63,9 @@ a {
 }
 
 .navbar nav a:hover {
-    color: #ff6347; /* Highlight color */
+    color: #ff6347;
 }
 
-/* Hero Section */
 .hero {
     height: 80vh;
     background: url('background4.png') no-repeat center center/cover;
@@ -78,11 +74,6 @@ a {
     justify-content: flex-end;
     color: rgba(0, 0, 0, 0.897);
     position: relative;
-}
-
-.text-container {
-    
-    
 }
 
 .large-text {
@@ -101,107 +92,60 @@ a {
     margin-top: 40px;
     margin-right: 290px;
 }
-
-/* Placeholder Sections */
 section {
     text-align: center;
-}
-
-.services {
-    margin-top: 0px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
-    border-radius: 8px;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.services:nth-child(even) {
-    margin-left: auto;
-    margin-right: 100px;
-}
-.services:nth-child(odd) {
-    margin-right: auto;
-    margin-left: 100px;
-}
-
-.services h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #333;
-}
-
-.services ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.services li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #555;
 }
 
 .services-container {
     height: 100vh;
     position: relative;
     background: url('background2.png') no-repeat center center/cover;
-    
     margin-left: auto;
     margin-right: auto;
 }
+
 .space {
     height: 74px;
 }
 
-#b3 {
-    background: url('background3.png') no-repeat center center/cover;
-}
-
-
-
-    /* Footer Styling */
-    .footer {
-        background-color: #333;
-        color: white;
-        padding: 20px 0;
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
         
-    }
+}
     
-    .footer-content {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 20px;
-        max-width: 1200px;
-        margin: auto;
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
     
-    .footer-section {
-        flex: 1 1 300px;
-        margin: 10px;
-    }
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
     
-    .footer-section h3 {
-        margin-bottom: 15px;
-        font-size: 1.5rem;
-    }
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
     
-    .footer-section p,
-    .footer-section a {
-        font-size: 1rem;
-        margin-bottom: 10px;
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
+.footer-section p,
+.footer-section a {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
     
-    .footer-section a:hover {
-        color: #ff6347; /* Highlight color for links */
-    }
-    
-
-    /* Pricing Section */
+.footer-section a:hover {
+    color: #ff6347;
+}
 .pricing-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -219,30 +163,24 @@ section {
     color: #555;
 }
 
-.pricing-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .pricing-card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 450px;
     width: 100%;
     text-align: left;
+    
 }
 
 .pricing-card h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 
 .pricing-card p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
 }
@@ -251,21 +189,28 @@ section {
     font-weight: bold;
 }
 
-/* Custom Colors for Each Pricing Card */
-.pricing-card:nth-child(1) {
-    border-left: 4px solid #007BFF; /* Blue for Documents */
+.pricing-card:nth-child(4) {
+    border-left: 4px solid #007BFF; 
+    margin-left: 500px;
 }
 
 .pricing-card:nth-child(2) {
-    border-left: 4px solid #28A745; /* Green for Webpages */
+    border-left: 4px solid #28A745; 
 }
 
 .pricing-card:nth-child(3) {
-    border-left: 4px solid #FFC107; /* Yellow for Software */
+    border-left: 4px solid #FFC107; 
 }
 
-/* Add subtle animation for hover effect */
 .pricing-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+.pricing-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 200px;
+}
+.pricing-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 200px;
 }
