@@ -3,65 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Website</title>
     <link rel="stylesheet" href="contacts.css">
 </head>
 <body>
-    <!-- Header -->
+     
     <header class="navbar">
-        <img src="logo.png" alt="Company Logo" class="logo">
+        <a href="index.html"> <img src="logo.png" alt="Logo" class="logo"></a>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="services.html">Služby</a>
+            <a href="prices.html">Ceník</a>
+            <a href="examples.html">Příklady</a>
+            <a href="contacts.html">Kontakty</a>
         </nav>
+        
     </header>
+    <div class="space"></div>
+    <div class="top-section">Kontakty</div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Contact Section -->
+    
         <section id="contact" class="contact-section">
-            <h1>Contact Us</h1>
+            <h1>Kontaktuj nás</h1>
             <div class="contact-container">
-                <!-- Contact Information -->
+                
                 <div class="contact-info">
-                    <h2>Company Information</h2>
-                    <p><strong>Name:</strong> Translation Company</p>
-                    <p><strong>Address:</strong> 123 Language Lane, Translation City, TX 12345</p>
-                    <p><strong>Email:</strong> <a href="mailto:info@translationcompany.com">info@translationcompany.com</a></p>
-                    <p><strong>Phone:</strong> +123-456-7890</p>
+                    <h2>Informace o  firmě</h2>
+                    <p><strong>Jméno:</strong> Překladatelská agentura</p>
+                    <p><strong>Adresa:</strong> Modřanská 12, Praha 4</p>
+                    <p><strong>Email:</strong> example@company.cz</p>
+                    <p><strong>Telefon:</strong> +420 123456789</p>
                 </div>
-                <!-- Operating Hours -->
+                
                 <div class="operating-hours">
-                    <h2>Operating Hours</h2>
-                    <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
-                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
-                    <p><strong>Sunday:</strong> Closed</p>
+                    <h2>Otevírací doba</h2>
+                    <p><strong>Pondělí - Pátek:</strong> 9:00 - 18:00</p>
+                    <p><strong>Sobota:</strong> 10:00 - 16:00</p>
+                    <p><strong>Neděle:</strong> Zavřeno </p>
                 </div>
-                <!-- Contact Form -->
+                
                 <div class="contact-form">
-                    <h2>Get in Touch</h2>
-                    <form action="submit-form.php" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <button type="submit">Send Message</button>
+                    <h2>Ozvěte se</h2>
+                    <form>
+                        <label>Jméno:</label>
+                        <input type="text">
+                        <label>Email:</label>
+                        <input type="text">
+                        <label>Zpráva:</label>
+                        <textarea></textarea>
+                        <button>Odeslat zprávu</button>
                     </form>
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
+    
+    
     <footer class="footer">
-        <p>&copy; 2024 Translation Company | All Rights Reserved</p>
+        <div class="footer-content">
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Kontakty</h3>
+                <p>Email: example@company.cz</p>
+                <p>Telefon: +420 123456789</p>
+                <p>Adresa: Ráj s. r. o. Modřanská 12, Praha 4</p>
+            </div>
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h3>Sleduj nás</h3>
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+            </div>
+            <!-- Website Links -->
+            <div class="footer-section">
+                <h3>Odkazy</h3>
+                <a href="#section1">Služby</a>
+                <a href="#section2">Ceník</a>
+                <a href="#section3">Příklady</a>
+                <a href="contacts.html">Kontakty</a>
+            </div>
+        </div>
     </footer>
+
+
 </body>
 </html>
