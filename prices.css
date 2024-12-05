@@ -6,60 +6,50 @@
 body, html {
     font-family: Arial, sans-serif;
 }
-.button {
-    background-color: #2e2e2e;
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin-top: 40px;
-    margin-left: 20px;
-}
 a {
     text-decoration: none;
 }
 .hero {
-    height: 80vh;
     background: url('background6.png') no-repeat center center/cover;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
+    flex-direction: column;
     color: rgba(0, 0, 0, 0.897);
-    position: relative;
 }
 .large-text {
     font-size: 4.5rem;
     font-weight: bold;
     max-width: 800px;
-    margin-left: auto;
     margin-top: 50px;
-    margin-right: 100px;
+    margin-left: 30px;
 }
 .small-text {
     font-size: 2rem;
     max-width: 600px;
-    margin-left: auto;
     margin-top: 40px;
-    margin-right: 290px;
+    margin-right: 200px;
+    margin-left: 30px;
+}
+.button {
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 530px;
 }
 .services-container {
-    height: 100vh;
     position: relative;
     background: url('background3.png') no-repeat center center/cover;
     margin-left: auto;
     margin-right: auto;
 }
-.space {
-    height: 74px;
-}
-
-
-
 .pricing-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -82,7 +72,8 @@ a {
     max-width: 450px;
     width: 100%;
     text-align: left;
-    
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .pricing-card h2 {
     font-size: 2.5rem;
@@ -117,4 +108,33 @@ a {
 .pricing-card:nth-child(odd) {
     margin-right: auto;
     margin-left: 200px;
+}
+
+@media only screen and (max-width: 850px) {
+    .pricing-card:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pricing-card:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 815px) {
+    .button {
+        margin-right: 100px;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .large-text {
+        font-size: 3rem;
+    }
 }
