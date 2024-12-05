@@ -7,33 +7,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    z-index: 1000;
-}
-.logo {
-    height: 50px;
-    margin-right: 50px;
-}
-.navbar nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 50px;
-    font-weight: bold;
-    font-size: xx-large;
-}
-.navbar nav a:hover {
-    color: #ff6347; 
-}
-
 
 
 .hero {
@@ -106,39 +79,4 @@ body, html {
 }
 #b3 {
     background: url('background3.png') no-repeat center center/cover;
-}
-
-
-
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-        
-}
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-.footer-section {
-    flex: 1 1 300px;
-    margin: 10px;
-}
-.footer-section h3 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-.footer-section p, .footer-section a {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    display: block;
-    color: white;
-    text-decoration: none;
-}
-.footer-section a:hover {
-    color: #ff6347;
 }
