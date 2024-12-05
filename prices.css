@@ -49,6 +49,8 @@ a {
     background: url('background3.png') no-repeat center center/cover;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .pricing-section {
     padding: 40px 20px;
@@ -70,7 +72,6 @@ a {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 450px;
-    width: 100%;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -87,9 +88,8 @@ a {
 .pricing-card strong {
     font-weight: bold;
 }
-.pricing-card:nth-child(4) {
+.pricing-card:nth-child(1) {
     border-left: 4px solid #007BFF; 
-    margin-left: 500px;
 }
 .pricing-card:nth-child(2) {
     border-left: 4px solid #28A745; 
@@ -112,12 +112,12 @@ a {
 
 @media only screen and (max-width: 850px) {
     .pricing-card:nth-child(even) {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .pricing-card:nth-child(odd) {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .services-container {
         display: flex;
