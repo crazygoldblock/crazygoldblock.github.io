@@ -9,7 +9,7 @@ body, html {
 a {
     text-decoration: none;
 }
-.hero {
+.main {
     background: url('background6.png') no-repeat center center/cover;
     display: flex;
     align-items: flex-end;
@@ -44,7 +44,7 @@ a {
     margin-bottom: 30px;
     margin-right: 530px;
 }
-.services-container {
+.container {
     position: relative;
     background: url('background3.png') no-repeat center center/cover;
     margin-left: auto;
@@ -52,21 +52,21 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.pricing-section {
+.info {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-.pricing-section h1 {
+.info h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-.pricing-section p {
+.info p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #555;
 }
-.pricing-card {
+.card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -76,50 +76,50 @@ a {
     margin-top: 30px;
     margin-bottom: 15px;
 }
-.pricing-card h2 {
+.card h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
-.pricing-card p {
+.card p {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
 }
-.pricing-card strong {
+.card strong {
     font-weight: bold;
 }
-.pricing-card:nth-child(1) {
+.card:nth-child(1) {
     border-left: 4px solid #007BFF; 
 }
-.pricing-card:nth-child(2) {
+.card:nth-child(2) {
     border-left: 4px solid #28A745; 
 }
-.pricing-card:nth-child(3) {
+.card:nth-child(3) {
     border-left: 4px solid #FFC107; 
 }
-.pricing-card:hover {
+.card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
-.pricing-card:nth-child(even) {
+.card:nth-child(even) {
     margin-left: auto;
     margin-right: 200px;
 }
-.pricing-card:nth-child(odd) {
+.card:nth-child(odd) {
     margin-right: auto;
     margin-left: 200px;
 }
 
 @media only screen and (max-width: 850px) {
-    .pricing-card:nth-child(even) {
+    .card:nth-child(even) {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .pricing-card:nth-child(odd) {
+    .card:nth-child(odd) {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .services-container {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
