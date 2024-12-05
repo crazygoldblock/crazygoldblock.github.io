@@ -9,7 +9,7 @@ body, html {
 a {
     text-decoration: none;
 }
-.hero {
+.main {
     background: url('background.png') no-repeat center center/cover;
     display: flex;
     align-items: flex-start;
@@ -34,12 +34,12 @@ a {
 }
 
 
-.services-container {
+.container {
     background: url('background2.png') no-repeat center center/cover;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.services {
+.card {
     margin-top: 0px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -49,25 +49,25 @@ a {
     margin: 20px;
 }
 
-.services:nth-child(even) {
+.card:nth-child(even) {
     margin-left: auto;
     margin-right: 100px;
 }
-.services:nth-child(odd) {
+.card:nth-child(odd) {
     margin-right: auto;
     margin-left: 100px;
 }
-.services h2 {
+.card h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     text-align: center;
     color: #333;
 }
-.services ul {
+.card ul {
     list-style-type: disc;
     padding-left: 20px;
 }
-.services li {
+.card li {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #555;
@@ -86,15 +86,15 @@ a {
     }
 }
 @media only screen and (max-width: 800px) {
-    .services:nth-child(even) {
+    .card:nth-child(even) {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .services:nth-child(odd) {
+    .card:nth-child(odd) {
         margin-right: 20px;
         margin-left: 20px;
     }
-    .services-container {
+    .container {
         display: flex;
         align-items: center;
         flex-direction: column;

@@ -9,7 +9,7 @@ body, html {
 a {
     text-decoration: none;
 }
-.hero {
+.main {
     background: url('background5.png') no-repeat center center/cover;
     display: flex;
     align-items: flex-end;
@@ -44,14 +44,14 @@ a {
     margin-bottom: 30px;
     margin-right: 530px;
 }
-.services-container {
+.container {
     background: url('background8.png') no-repeat center center/cover;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     min-height: 800px;
 }
-.pricing-card {
+.card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -59,44 +59,43 @@ a {
     text-align: left;
     max-width: 450px;
     margin: 30px;
-
 }
-.pricing-section {
+.info {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-.pricing-section p {
+.info p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #555;
 }
-.pricing-card h2 {
+.card h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: bold;
 }
-.pricing-card p {
+.card p {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
 }
-.pricing-card:nth-child(1) {
+.card:nth-child(1) {
     border-left: 4px solid #007BFF; 
 }
-.pricing-card:nth-child(2) {
+.card:nth-child(2) {
     border-left: 4px solid #28A745; 
 }
-.pricing-card:nth-child(3) {
+.card:nth-child(3) {
     border-left: 4px solid #FFC107; 
 }
-.pricing-card:hover {
+.card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
 @media only screen and (max-width: 1090px) {
-    .services-container {
+    .container {
         flex-direction: column;
     }
 }
