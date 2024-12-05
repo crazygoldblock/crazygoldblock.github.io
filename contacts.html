@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Kontakty</title>
     <link rel="stylesheet" href="contacts.css">
 </head>
 <body>
@@ -43,14 +43,14 @@
                 
                 <div class="contact-form">
                     <h2>Ozvěte se</h2>
-                    <form>
-                        <label>Jméno:</label>
-                        <input type="text">
-                        <label>Email:</label>
-                        <input type="text">
-                        <label>Zpráva:</label>
-                        <textarea></textarea>
-                        <button>Odeslat zprávu</button>
+                    <form action="index.html">
+                        <label for="name">Jméno:</label>
+                        <input type="text" id="name" required>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" required>
+                        <label for="message">Zpráva:</label>
+                        <textarea id="message"></textarea>
+                        <button type="submit">Odeslat zprávu</button>
                     </form>
                 </div>
             </div>
