@@ -6,35 +6,39 @@
 body, html {
     font-family: Arial, sans-serif;
 }
-
-
-
+a {
+    text-decoration: none;
+}
 .hero {
-    height: 100vh;
     background: url('background.png') no-repeat center center/cover;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding: 20px;
+    justify-content: flex-end;
+    flex-direction: column;
     color: rgba(0, 0, 0, 0.897);
-    position: relative;
-    margin-top: 70px;
 }
 .large-text {
     font-size: 4.5rem;
     font-weight: bold;
     max-width: 800px;
-    margin-left: 100px;
     margin-top: 50px;
+    margin-left: 60px;
 }
 .small-text {
     font-size: 2rem;
     max-width: 600px;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 60px;
+    margin-bottom: 30px;
 }
 
 
+.services-container {
+    background: url('background2.png') no-repeat center center/cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .services {
     margin-top: 0px;
     padding: 20px;
@@ -42,7 +46,9 @@ body, html {
     border-radius: 8px;
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
+
 .services:nth-child(even) {
     margin-left: auto;
     margin-right: 100px;
@@ -66,17 +72,36 @@ body, html {
     margin-bottom: 10px;
     color: #555;
 }
-.services-container {
-    height: 100vh;
-    position: relative;
-    background: url('background2.png') no-repeat center center/cover;
-    
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .space {
-    height: 80px;
+    height: 89px;
 }
 #b3 {
     background: url('background3.png') no-repeat center center/cover;
+}
+
+@media only screen and (max-width: 915px) {
+    .space {
+        height: 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .services:nth-child(even) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .services:nth-child(odd) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .services-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .large-text {
+        font-size: 3rem;
+    }
 }
