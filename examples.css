@@ -44,7 +44,7 @@ a {
     margin-bottom: 30px;
     margin-right: 530px;
 }
-.services-container {
+.container {
     background: url('background3.png') no-repeat center center/cover;
     display: flex;
     
@@ -52,7 +52,7 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.pricing-card {
+.card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -63,39 +63,41 @@ a {
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.services-container:nth-child(2) {
+.container:nth-child(2) {
     background: url('background2.png') no-repeat center center/cover;
 }
-.pricing-section {
+
+.info {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-.pricing-section h1 {
+.info h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-.pricing-section p {
+.info p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: #555;
 }
-.pricing-card h2 {
+
+.card h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
-.pricing-card p {
+.card p {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
 }
-.pricing-card strong {
+.card strong {
     font-weight: bold;
 }
-.pricing-card:nth-child(1) {
+.card:nth-child(1) {
     border-left: 4px solid #007BFF; 
 }
-.pricing-card:nth-child(2) {
+.card:nth-child(2) {
     border-left: 4px solid #28A745; 
 }
 
@@ -107,7 +109,7 @@ a {
     }
 }
 @media only screen and (max-width: 720px) {
-    .services-container {
+    .container {
         flex-direction: column;
     }
 }
